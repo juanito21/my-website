@@ -32,6 +32,7 @@ export const AboutUser = () => {
           </div>
           <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3>{user.title}</h3>
+            <br/>
             <div className="row">
               <div className="col-lg-13">
                 <ul>

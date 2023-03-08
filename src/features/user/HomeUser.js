@@ -29,6 +29,8 @@ export const HomeUser = () => {
           <Typewriter
             class="typed"
             options={{
+              delay: 90,
+              deleteSpeed: 60,
               strings: user.roles,
               autoStart: true,
               loop: true,
@@ -36,8 +38,9 @@ export const HomeUser = () => {
           />
         </span>
         <div className="social-links">
-          <a href="#"><i className="bi bi-link-45deg"></i> malt</a>
-          <a href="#"><i className="bi bi-link-45deg"></i> linkedin</a>
+          <a href="https://www.malt.fr/profile/jeanhascoet" target={'_blank'}><i className="bi bi-link-45deg"></i> malt</a>
+          <a href="https://www.linkedin.com/in/jeanhascoet/"><i className="bi bi-linkedin"></i> linkedin</a>
+          <a href={`mailto:${user.email}`} target={'_blank'}><i className="bi bi-envelope"></i> {user.email}</a>
         </div>
       </div>
     </section>

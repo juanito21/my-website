@@ -1,13 +1,20 @@
 import React, {useEffect} from 'react'
 import {useDispatch, useSelector} from "react-redux";
-import {fetchResume, selectEducationalEntries, selectProfessionalEntries, selectResumeStatus} from "./resumeSlice";
+import {
+  selectEducationalEntries,
+  selectProfessionalEntries,
+  selectResumeStatus,
+  selectSkillEntries
+} from "./resumeSlice";
 import {format} from "date-fns";
+import {LinearProgress} from "@mui/material";
 
 export const Resume = () => {
   const dispatch = useDispatch()
 
   const professionalEntries = useSelector(state => selectProfessionalEntries(state))
   const educationalEntries = useSelector(state => selectEducationalEntries(state))
+  const skills = useSelector(state => selectSkillEntries(state))
 
   const resumeStatus = useSelector(state => selectResumeStatus(state))
 
@@ -33,9 +40,20 @@ export const Resume = () => {
       <p>{entry.description}</p>
       <ul>
         {entry.items.map(item => (
-          <li>{item}</li>
+          <li key={item}>{item}</li>
         ))}
       </ul>
+    </div>
+  ))
+
+  const skillsContent = skills.map(skill => (
+    <div className={"resume-item"}>
+      <h4 className="skill-title">{skill.category}</h4>
+      {
+        skill.items.map(item => (
+          <h5 className="skill">{item} </h5>
+        ))
+      }
     </div>
   ))
 
@@ -49,6 +67,8 @@ export const Resume = () => {
 
         <div className="row">
           <div className="col-lg-6">
+            <h3 className="resume-title">Skills</h3>
+            {skillsContent}
             <h3 className="resume-title">Education</h3>
             {educationalContent}
           </div>

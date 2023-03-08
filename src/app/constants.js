@@ -1,6 +1,6 @@
 export const user = {
   name: 'Jean',
-  surname: 'HASCOET',
+  surname: 'Hascoët',
   birthdate: '1992-11-21',
   nationality: 'french',
   location: 'Nantes, France',
@@ -18,20 +18,31 @@ export const user = {
 export const skills = [
   {
     category: "Programming Languages",
-    items: [
-      {name: "Java", level: 0.8},
-      {name: "Python", level: 0.8},
-      {name: "Kotlin", level: 0.8},
-      {name: "Javascript", level: 0.8},
-      {name: "Typescript", level: 0.8},
-      {name: "Reactor", level: 0.8}
-    ]
+    items: ["Java", "Python", "Kotlin", "Javascript", "Typescript"]
   },
   {
-    category: "Programming Languages",
-    items: [
-      {name: "Java", level: 0.8}
-    ]
+    category: "Frameworks",
+    items: ["Spring Boot", "Angular", "NestJS", "React", "FastAPI"]
+  },
+  {
+    category: "Libraries",
+    items: ["Reactor", "RxJS", "Pandas", "React Redux", "NGXS"]
+  },
+  {
+    category: "Databases",
+    items: ["MongoDB", "PostgreSQL", "Oracle", "MS SQL"]
+  },
+  {
+    category: "Web",
+    items: ["RestAPI", "WebSocket", "Load Balancing", "AWS"]
+  },
+  {
+    category: "Other",
+    items: ["GitHub", "Gradle", "Maven", "Linux", "Excel", "Machine Learning"]
+  },
+  {
+    category: "Languages",
+    items: ["French (native)", "English (bilingual)"]
   },
 ]
 

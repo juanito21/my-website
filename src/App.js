@@ -5,7 +5,6 @@ import {AboutUser} from "./features/user/AboutUser";
 import {Footer} from "./app/Footer";
 import {useSelector} from "react-redux";
 import {loading} from "./app/store";
-import {Skills} from "./features/skills/Skills";
 import {Resume} from "./features/resume/Resume";
 
 function App() {
@@ -17,7 +16,6 @@ function App() {
     <HomeUser/>
     <main id="main">
       <AboutUser/>
-      <Skills/>
       <Resume/>
     </main>
     <Footer/>
