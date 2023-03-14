@@ -7,7 +7,7 @@ export const user = {
   title: 'Full-Stack Developer / Team Lead',
   roles: ['IT Engineer', 'Full-Stack Developer', 'Team Lead', 'Freelance'],
   phone: '+ 33 6 85 85 22 38',
-  email: 'jean.hascoet37@gmail.com',
+  email: 'jean@hascoet.dev',
   degree: 'Master',
   status: 'Available',
   description: 'Full Stack Developer, graduated from Polytech Nantes engineering school. I mainly worked for finance companies.\n' +

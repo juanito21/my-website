@@ -38,9 +38,10 @@ export const HomeUser = () => {
           />
         </span>
         <div className="social-links">
+          <a href="./cv.pdf" target={'_blank'}><i className="bi bi-filetype-pdf"></i></a>
+          <a href="https://www.linkedin.com/in/jeanhascoet/"><i className="bi bi-linkedin"></i></a>
+          <a href={`mailto:${user.email}`} target={'_blank'}><i className="bi bi-envelope"></i></a>
           <a href="https://www.malt.fr/profile/jeanhascoet" target={'_blank'}><i className="bi bi-link-45deg"></i> malt</a>
-          <a href="https://www.linkedin.com/in/jeanhascoet/"><i className="bi bi-linkedin"></i> linkedin</a>
-          <a href={`mailto:${user.email}`} target={'_blank'}><i className="bi bi-envelope"></i> {user.email}</a>
         </div>
       </div>
     </section>
