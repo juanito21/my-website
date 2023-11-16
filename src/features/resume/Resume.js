@@ -35,7 +35,7 @@ export const Resume = () => {
   const professionalContent = professionalEntries.map(entry => (
     <div className="resume-item">
       <h4>{entry.title}</h4>
-      <h5>{format(new Date(entry.from), 'yyyy-MM')} - {format(new Date(entry.to), 'yyyy-MM')}</h5>
+      <h5>{format(new Date(entry.from), 'yyyy-MM')} - {entry.to === 'now' ? entry.to : format(new Date(entry.to), 'yyyy-MM')}</h5>
       <p><em>{entry.company}, {entry.location}</em></p>
       <p>{entry.description}</p>
       <ul>
