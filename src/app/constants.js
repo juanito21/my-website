@@ -104,7 +104,7 @@ export const professionalEntries = [
   {
     from: "2016-09-01",
     to: "2020-02-01",
-    title: "Font Office Developer",
+    title: "Front Office Developer",
     company: "Société Générale",
     location: "Hong Kong",
     description: "Developing tailor made load balancing microservices for equity derivatives desks in agile methodology with continuous integration and delivery - Java, Kotlin, SpringBoot, AngularJS, Jenkins",
